@@ -1,0 +1,309 @@
+Question 1.How are inline and block elements different from each other?
+Answer​:
+A block element always starts on a new line, and fills up the horizontal space left and right on the web page. 
+You can add margins and padding on all four sides of any block element — top, right, left, and bottom.
+Some examples of block elements are ​<div>​and ​<p>​tags.
+
+Whereas,
+
+Inline elements don’t start on a new line, they appear on the same line as the content and tags beside them. 
+Some examples of inline elements are ​<span>​, ​<strong>​, and <img>​tags.
+
+When it comes to margins and padding, browsers treat inline elements differently. 
+We can add space to the left and right on an inline element, but we cannot add height to the top or bottom padding or margin of an inline element.
+Inline elements can actually appear within block elements.
+
+Question 2.Explain the difference between visibility:hidden and display:none
+
+Ans:
+
+display:none
+
+removes the element from the normal flow of the page, allowing other elements to fill in.
+
+Visibility:hidden
+
+leaves the element in the normal flow of the page such that is still occupies space.
+
+Question 3. Explain the clear and float properties.
+
+Ans:Float:
+The float property is used for positioning and formatting content e.g. let an image float left to the text in a container.
+
+The float property can have one of the following values:
+
+    left - The element floats to the left of its container
+    right- The element floats to the right of its container
+    none - The element does not float (will be displayed just where it occurs in the text). This is default
+    inherit - The element inherits the float value of its parent
+
+In its simplest use, the float property can be used to wrap text around images.
+
+Clear:
+The clear property specifies what elements can float beside the cleared element and on which side.
+
+The clear property can have one of the following values:
+
+    none - Allows floating elements on both sides. This is default
+    left - No floating elements allowed on the left side
+    right- No floating elements allowed on the right side
+    both - No floating elements allowed on either the left or the right side
+    inherit - The element inherits the clear value of its parent
+
+The most common way to use the clear property is after you have used a float property on an element.
+
+
+
+Question 4:Explain difference between absolute, relative,fixed and static.
+
+Ans:
+Position- absolute:
+An element with position: absolute; is positioned relative to the nearest positioned ancestor (instead of positioned relative to the viewport, like fixed).
+
+However; if an absolute positioned element has no positioned ancestors, it uses the document body, and moves along with page scrolling.
+
+Position-relative:
+An element with position: relative; is positioned relative to its normal position.
+
+Setting the top, right, bottom, and left properties of a relatively-positioned element will cause it to be adjusted away from its normal position. Other content will not be adjusted to fit into any gap left by the element.
+
+Position-fixed:
+An element with position: fixed; is positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled. The top, right, bottom, and left properties are used to position the element.
+
+A fixed element does not leave a gap in the page where it would normally have been located.
+
+Position-static:
+HTML elements are positioned static by default.
+
+Static positioned elements are not affected by the top, bottom, left, and right properties.
+
+An element with position: static; is not positioned in any special way; it is always positioned according to the normal flow of the page:
+
+
+Question 5. Write the HTML code to create a table in which there are 4 columns( ID , Employee Name, Designation, Department) and at least 6 rows. Also do some styling to it.
+
+
+
+Question 6.Why do we use meta tags?
+Ans:
+Metadata is data (information) about data.
+
+The <meta> tag provides metadata about the HTML document. Metadata will not be displayed on the page, but will be machine parsable.
+
+Meta elements are typically used to specify page description, keywords, author of the document, last modified, and other metadata.
+
+The metadata can be used by browsers (how to display content or reload page), search engines (keywords), or other web services.
+
+HTML5 introduced a method to let web designers take control over the viewport (the user's visible area of a web page), through the <meta> tag (See "Setting The Viewport" example below).
+
+
+Question 7:Explain box model.
+Ans:
+All HTML elements can be considered as boxes. In CSS, the term "box model" is used when talking about design and layout.
+
+The CSS box model is essentially a box that wraps around every HTML element. It consists of: margins, borders, padding, and the actual content.
+Explanation of the different parts:
+
+    Content - The content of the box, where text and images appear
+    Padding - Clears an area around the content. The padding is transparent
+    Border - A border that goes around the padding and content
+    Margin - Clears an area outside the border. The margin is transparent
+
+The box model allows us to add a border around elements, and to define space between elements. 
+
+Question 8. What are the different types of CSS Selectors?
+
+Ans:
+CSS Selectors
+
+CSS selectors are used to "find" (or select) HTML elements based on their element name, id, class, attribute, and more.
+Universal Selector:
+
+The universal selector works like a wild card character, selecting all elements on a page. Every HTML page is built on content placed within HTML tags. Each set of tags represents an element on the page. Look at the following CSS example, which uses the universal selector:
+* {
+   color: green;
+   font-size: 20px;
+   line-height: 25px;
+}
+Element Type Selector:
+
+Also referred to simply as a “type selector,” this selector must match one or more HTML elements of the same name. Thus, a selector of nav would match all HTML nav elements, and a selector of <ul> would match all HTML unordered lists, or <ul> elements.
+
+The following example uses an element type selector to match all <ul> elements:
+
+ul {
+   list-style: none;
+   border: solid 1px #ccc;
+}
+ID Selector:
+
+An ID selector is declared using a hash, or pound symbol (#) preceding a string of characters. The string of characters is defined by the developer. This selector matches any HTML element that has an ID attribute with the same value as that of the selector, but minus the hash symbol.
+
+Here’s an example:
+
+#container {
+   width: 960px;
+   margin: 0 auto;
+}
+Class Selector:
+
+The class selector is the most useful of all CSS selectors. It’s declared with a dot preceding a string of one or more characters. Just as is the case with an ID selector, this string of characters is defined by the developer. The class selector also matches all elements on the page that have their class attribute set to the same value as the class, minus the dot.
+
+Take the following rule set:
+
+.box {
+   padding: 20px;
+   margin: 10px;
+   width: 240px;
+}
+
+
+Question 9. Define Doctype.
+Ans:
+
+The <!DOCTYPE> declaration must be the very first thing in your HTML document, before the <html> tag.
+
+The <!DOCTYPE> declaration is not an HTML tag; it is an instruction to the web browser about what version of HTML the page is written in.
+
+In HTML 4.01, the <!DOCTYPE> declaration refers to a DTD, because HTML 4.01 was based on SGML. The DTD specifies the rules for the markup language, so that the browsers render the content correctly.
+
+HTML5 is not based on SGML, and therefore does not require a reference to a DTD.
+
+
+Question 10. Explain 5 HTML5 semantic tags.
+
+Many web sites contain HTML code like: <div id="nav"> <div class="header"> <div id="footer"> to indicate navigation, header, and footer.
+
+HTML5 offers new semantic elements to define different parts of a web page:
+
+    • <article>
+
+    • <aside>
+
+    • <details>
+
+    • <figcaption>
+
+    • <figure>
+
+    • <footer>
+
+    • <header>
+
+    • <main>
+
+    • <mark>
+
+    • <nav>
+
+    • <section>
+
+    • <summary>
+
+    • <time>
+
+HTML5 <section> Element
+
+The <section> element defines a section in a document.
+According to W3C's HTML5 documentation: "A section is a thematic grouping of content, typically with a heading."
+
+A home page could normally be split into sections for introduction, content, and contact information.
+
+Example
+
+<​section​>
+<​h1​>​WWF​<​/h1​>​
+​<​p​>​The World Wide Fund for Nature (WWF) is....​<​/p​>
+<​/section​>
+
+
+HTML5 <article> Element
+
+The <article> element specifies independent, self-contained content.
+
+An article should make sense on its own, and it should be possible to read it independently from the rest of the web site.
+
+Examples of where an <article> element can be used:
+
+    • Forum post
+
+    • Blog post
+
+    • Newspaper article
+
+Example
+
+<​article​>
+​<​h1​>​What Does WWF Do?​<​/h1​>
+
+​<​p​>​WWF's mission is to stop the degradation of our planet's natural environment, and build a future in which humans live in harmony with nature.​<​/p​>
+<​/article​>
+
+
+
+
+HTML5 <header> Element
+
+The <header> element specifies a header for a document or section.
+
+The <header> element should be used as a container for introductory content.
+
+You can have several <header> elements in one document.
+
+The following example defines a header for an article:
+
+Example
+
+<​article​>
+<​header​>​
+​<​h1​>​What Does WWF Do?​<​/h1​>
+<p​>​WWF's​ mission:<​/p​>​
+​<​/header​>
+​<​p​>​WWF's mission is to stop the degradation of our planet's natural environment, and build a future in which humans live in harmony with nature.​<​/p​>
+<​/article​>
+
+
+
+
+HTML5 <footer> Element
+
+The <footer> element specifies a footer for a document or section.
+
+A <footer> element should contain information about its containing element.
+
+A footer typically contains the author of the document, copyright information, links to terms of use, contact information, etc.
+
+You may have several <footer> elements in one document.
+
+Example
+
+<​footer​>
+​<​p​>​Posted by: Hege Refsnes​<​/p​>
+
+​<​p​>​Contact information: ​<​a​href​="mailto:someone@example.com"> someone@example.com​<​/a​>​.​<​/p​>
+<​/footer​>
+
+
+
+
+HTML5 <nav> Element
+
+The <nav> element defines a set of navigation links.
+
+Notice that NOT all links of a document should be inside a <nav> element. The <nav> element is intended only for major block of navigation links.
+
+Example
+
+<​nav​>
+<​a​​href="/html/">​HTML​<​/a​>​​|
+<​a​​href="/css/">​CSS​<​/a​>​​|
+<​a​​href="/js/">​JavaScript​<​/a​>​​|
+<​a​​href="/jquery/">​jQuery​<​/a​>​
+<​/nav​>
+
+
+Question 11 Create HTML for web-page.jpg (check resources, highest weightage for answers)
+uploaded on git
+
+Question 12 Create HTML for form.png (check resources, highest weightage for answers).
+uplloaded on git
