@@ -1,0 +1,157 @@
+body{
+    background-color:#222428;
+    margin: 0px;
+}
+
+.pageHeader{
+    background-color: #333;
+    color: aliceblue;
+    padding: 10px;
+    padding-left: 105px;
+    padding-right: 110px;
+    border-radius: 5px;
+
+}
+
+nav {
+    margin: 0;
+    overflow: hidden;
+
+}
+
+nav ul{
+    margin: 0;
+    padding: 0;
+}
+nav ul li {
+    display: inline-block;
+    list-style-type: none;
+}
+ 
+nav > ul > li > a {
+    color: white;
+    display: block;
+    line-height: 2em;
+    padding: 0.5em 0.5em;
+    text-decoration: none;
+}
+
+.contentWrapper{
+    margin-top: 0px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+h1{
+    margin: 0;
+}
+
+
+
+.navbar1{
+    margin-bottom: 3px;
+    background-color: #272728;
+    border-radius: 10px;
+    width: 960px;
+} 
+
+.header-title{
+    margin-bottom: 12px;
+    width: 960px;
+
+}
+
+.carousal{
+    background-color: #333;
+    width: 960px;
+    height: 360px;
+    border-radius: 10px;
+   
+}
+
+.pageContent{
+    background-color: antiquewhite;
+    padding: 25px;
+    padding-right: 110px;
+    padding-left: 105px;
+}
+
+.about{
+    background-color: #c5c7cc;
+    color: gray;
+    padding: 10px;
+    margin-top: 10px;
+    width: 945px;
+    border-radius: 10px;
+
+}
+
+.gallery{
+
+    color: gray;
+    padding: 10px;
+    margin-top: 10px;
+    width: 945px;
+    border-radius: 10px;
+
+}
+
+.flex-container {
+    display: flex;
+  }
+  
+.flex-container > div {
+    background-color: #333;
+    margin: 20px;
+    margin-top: 10px;
+    margin-left: 0px;
+    width: 215px;
+    height: 315px;
+   border-radius: 115px;
+  }
+
+.flex-header{
+
+    background-color: #333;
+    width: 215px;
+    height: 295px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;    
+
+}
+
+.flex-footer{
+    text-align: center;
+    height: 20px;
+    background-color: #c5c7cc;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-size:  15px;
+}
+
+  .footer
+  {
+      background-color: #333;   
+      height: 45px;
+      padding: 1px;
+      color: gray;
+      text-align: center;
+      font-size: 12px;
+      padding-top: 12px;
+  }
+
+/*
+  .left
+  {
+      text-align: left;
+      padding: 5px;
+      width: 800px;
+  }
+  .right
+  {
+      text-align: right;
+  }
+  .footer-child{
+      display: inline-block;
+  }
+*/
